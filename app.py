@@ -16,7 +16,7 @@ models.Base.metadata.create_all(bind=engine)
 
 app = FastAPI()
 
-model_path = ""  # Update this with the correct path
+model_path = "best.pt"  # Update this with the correct path
 model = YOLO(model_path)
 
 UPLOAD_DIR = "uploads"
